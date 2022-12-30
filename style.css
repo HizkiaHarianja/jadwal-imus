@@ -25,6 +25,10 @@ nav .navbar{
     font-size: 35px;
     font-weight: 500;
     color: #fff;
+    transition: all ease 0.3s;
+}
+.navbar .logo a:hover{
+    color: crimson;
 }
 .navbar .menu{
     display: flex;
@@ -71,8 +75,7 @@ nav .navbar{
     -moz-user-select: none;
     user-select: none;
 }
-
-  @media (min-width: 768px) {
+@media (max-width: 768px) {
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
     }
@@ -92,4 +95,64 @@ nav .navbar{
 .bi {
     vertical-align: -.125em;
     fill: currentColor;
+}
+@media (max-width: 579px){
+    .navbar .logo a{
+        font-size: 25px;
+        font-weight: 400;
+        color: #fff;
+    }
+    .menu li a{
+        display: none;
+    }
+    .home{
+        display: flex;
+        color: black;
+    }
+    .home .home-content .text-1{
+        font-size: 40px;
+        font-weight: 500;
+        margin-top: 10%;
+    }
+}
+@media (max-width: 421px){
+    nav{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: black;
+        padding: 13px;
+    }
+    .navbar .logo a{
+        font-size: 23px;
+        font-weight: 400;
+        color: #fff;
+    }
+    .menu li a{
+        display: none;
+    }
+    .home .home-content .text-1{
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 12%;
+    }
+}
+@media (max-width: 313px){
+    nav{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: black;
+        padding: 10px;
+    }
+    .menu li a{
+        display: none;
+    }
+    .home .home-content .text-1{
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 18%;
+    }
 }
